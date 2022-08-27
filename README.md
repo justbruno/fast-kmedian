@@ -20,8 +20,8 @@ Some experimental results below. Settings:
 
 Running times averaged over 10 runs.
 
-Linear scale             |  log scale
+Linear scale             |  log-log scale
 :-------------------------:|:-------------------------:
-![](images/results_k.png)  |  ![](images/log_results_k.png)
-![](images/results_nc.png)  |  ![](images/log_results_nc.png)
-![](images/results_nf.png)  |  ![](images/log_results_nf.png)
+![](images/results_k.png)  |  ![](images/loglog_results_k.png)
+![](images/results_nc.png)  |  ![](images/loglog_results_nc.png)
+![](images/results_nf.png)  |  ![](images/loglog_results_nf.png)

@@ -13,6 +13,12 @@ Here we offer an implementation that **avoids loops almost entirely**, by using 
 
 It is not difficult to devise some matrix operations to achieve significant speed-ups (see ``prototype.py``). Some further numpy-fu takes us comfortably to the **1000x speed-up** realm.
 
+Some experimental results below. Settings:
+- 100 facilities, 1000 cients, varying $k$;
+- 100 facilities, varying cients, $k=10$;
+- varying facilities, 1000 cients, $k=10$.
+
+Running times averaged over 10 runs.
 
 Linear scale             |  log scale
 :-------------------------:|:-------------------------:

@@ -1,7 +1,7 @@
 # fast-kmedian
 An efficient implementation of a local-search algorithm for k-median.
 
-The algorithm can be found in ``local_search.ls_kmedian``. The function takes as input a pre-computed matrix of facility-client distances and the number of facilities to be chosen ($k$).
+The algorithm can be found in ``local_search.ls_kmedian``. The function takes as input a pre-computed matrix of facility-client distances and the number of facilities to be chosen ( $k$ ).
 
 A baseline implementation is in ``baseline.py``.
 

@@ -19,9 +19,7 @@ def ls_kmedian(facility_distances, k):
     facilities = range(facility_distances.shape[0])
     # Initialize facility set randomly
     S = np.random.choice(facilities, k, replace=False)
-    print("initial set: ", S)
     converged = False
-    iterations = 0
     times = []
     all_dists = np.min(facility_distances[S,:], axis=0)
     current_cost = np.sum(all_dists)
@@ -46,6 +44,5 @@ def ls_kmedian(facility_distances, k):
         times.append((end-start).total_seconds())
         
         converged = pre_cost == current_cost 
-        iterations += 1
 
     return S

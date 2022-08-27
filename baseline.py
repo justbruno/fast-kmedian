@@ -36,9 +36,7 @@ def ls_kmedian(facility_distances, k):
     clients = range(nc)
     # Initialize facility set randomly
     S = np.random.choice(facilities, k, replace=False)
-    print("initial set: ", S)
     converged = False
-    iterations = 0
     times = []
     current_cost = compute_cost(S, facility_distances, clients)
     
@@ -73,4 +71,5 @@ def ls_kmedian(facility_distances, k):
         times.append((end-start).total_seconds())
         
         converged = pre_cost == current_cost 
-        iterations += 1
+
+    return S
